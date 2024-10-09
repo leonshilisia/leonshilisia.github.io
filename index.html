@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for additional styling */
+        body {
+            background-color: purple;
+            padding-top: 56px;
+        }
+        .about-me {
+            padding: 50px 0;
+			color: antiquewhite;
+        }
+        .projects {
+            padding: 50px 0;
+            background-color: white;
+        }
+        .contact {
+            padding: 50px 0;
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me text-center">
+        <div class="container">
+            <h1 class="mb-4">Leon the Analyst</h1>
+            <p><em> I am a data analyst with skills in SQL, Excel, Power BI, and Python. I create insightful reports and visualizations to help businesses make data-driven decisions.</em></p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects text-center">
+        <div class="container">
+            <h1 class="mb-4">Projects</h1>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="Economy select.jpg" alt="Project 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Economic Indicators Analysis</h4>
+                            <p class="card-text">This project Analyses certain Macroeconomic INdicators to influence policy formatiuoin.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://leonshilisia.github.io/Economic-Indicators-/" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="market_select.jpeg" alt="Project 2">
+                        <div class="card-body">
+                            <h4 class="card-title">Marketing Campaign Analysis.</h4>
+                            <p class="card-text">TThis project aimed to influence marketing strategy based on return on investment</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://leonshilisia.github.io/UK-YouTube-Analysis-2024/" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="StoreSales.jpeg" alt="Store Store Sales">
+                        <div class="card-body">
+                            <h4 class="card-title">Store Sales</h4>
+                            <p class="card-text">A comprehensive analysis and report on sales Perfomance.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://leonshilisia.github.io/sales-metrics-2014-2017/" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="EconFDI.jpeg" alt="Project 4">
+                        <div class="card-body">
+                            <h4 class="card-title">FDI and Economic Growth</h4>
+                            <p class="card-text">Research paper aimed to determine the nature of the relationship between Foreign Direct Investment and Economic Growth.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://leonshilisia.github.io/FDI-and-Economic-Growth-in-Kenya/" class="btn btn-primary" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h1 class="mb-4">Contact</h1>
+            <p>You can reach me at:</p>
+            <p>Email: lmshilisia@gmail.com</p>
+            <p>Phone: +254114561501</p>
+            <p>: <a href="https://www.linkedin.com/in/leon-shilisia-920b0326a/" class="text-white" target="_blank"> <img src="linkedin.png" alt="" width="20" height="20".></a></p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        $(document).ready(function(){
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+        // Dynamic navbar highlighting
+        $(window).scroll(function() {
+            var scrollDistance = $(window).scrollTop();
+            $('.page-section').each(function(i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('.navbar-nav a.nav-link.active').removeClass('active');
+                    $('.navbar-nav a.nav-link').eq(i).addClass('active');
+                }
+            });
+        }).scroll();
+    </script>
+</body>
+</html>
