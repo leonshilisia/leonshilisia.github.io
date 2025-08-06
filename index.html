@@ -1,171 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio WWebsite</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS for additional styling */
-        body {
-            background-color: blue;
-            padding-top: 56px;
-        }
-        .about-me {
-            padding: 50px 0;
-			color: white;
-        }
-        .projects {
-            padding: 50px 0;
-            background-color: white;
-        }
-        .contact {
-            padding: 50px 0;
-            background-color: blue;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BeyondStats | Data Analytics & Insights</title>
+  <meta name="description" content="BeyondStats empowers SMEs with data-driven decision-making. Discover our analytics portfolio, dashboards, and insights.">
+  <meta property="og:title" content="BeyondStats Portfolio">
+  <meta property="og:description" content="Explore our analytics projects, dashboards, and insights.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leonshilisia.github.io/Beyond_Stats_Website/">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --light-bg: #f8f9fa;
+      --dark-bg: #343a40;
+      --text-dark: #212529;
+    }
+    body {
+      background-color: var(--light-bg);
+      padding-top: 70px;
+      color: var(--text-dark);
+    }
+    .navbar {
+      background-color: var(--primary-color);
+    }
+    .page-section {
+      padding: 60px 0;
+    }
+    #about {
+      background-color: #fff;
+      color: var(--text-dark);
+    }
+    #projects {
+      background-color: var(--light-bg);
+    }
+    #contact {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    footer {
+      background-color: var(--dark-bg);
+      color: #bbb;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #fff;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">BeyondStats</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarResponsive" aria-controls="navbarResponsive"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="page-section text-center">
+    <div class="container">
+      <h1 class="mb-4">Leon Moses Shilisia</h1>
+      <p class="lead">
+        I’m a data scientist passionate about driving SME growth through
+        actionable insights. Expert in SQL, Python, Excel, Stata & Power BI.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="page-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Key Projects</h2>
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Economy select.jpg" class="card-img-top" alt="Economic Indicators">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Economic Indicators Analysis</h5>
+              <p class="card-text">
+                Analyzed macroeconomic trends to guide policy and investment decisions.
+              </p>
+              <a href="https://leonshilisia.github.io/Economic-Indicators-/" 
+                 target="_blank" class="mt-auto btn btn-primary">
+                View Project
+              </a>
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- About Me Section -->
-    <section id="about" class="about-me text-center">
-        <div class="container">
-            <h1 class="mb-4">Leon the Analyst</h1>
-            <p><em>I am a passionate data scientist with expertise in uncovering actionable insights from complex datasets. Proficient in tools such as SQL, Python, excel, stata and Power BI. With a strong foundation in statistical analysis and machine learning, I strive to solve business challenges and drive innovation through data.</em></p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects text-center">
-        <div class="container">
-            <h1 class="mb-4">Projects</h1>
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-<!-- 			<a href="https://leonshilisia.github.io/Economic-Indicators-/" class="btn btn-primary" target="_blank"><img class="card-img-top" src="Economy select.jpg" alt="Project 1"></a>
-			 <a href="https://leonshilisia.github.io/Economic-Indicators-/" class="btn btn-primary" target="_blank"> -->
-  <img class="card-img-top" src="Economy select.jpg" alt="Project 1" style="border: none;">
-</a>
-   
-                        <div class="card-body">
-                            <h4 class="card-title">Economic Indicators Analysis</h4>
-                            <p class="card-text">This project analyzes key macroeconomic indicators to provide insights that support effective policy formulation.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://leonshilisia.github.io/Economic-Indicators-/" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="market_select.jpeg" alt="Project 2">
-                        <div class="card-body">
-                            <h4 class="card-title">Marketing Campaign Analysis.</h4>
-                            <p class="card-text">This project focused on leveraging return on investment analysis to shape and optimize marketing strategies for greater impact and efficiency.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://leonshilisia.github.io/UK-YouTube-Analysis-2024/" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="StoreSales.jpeg" alt="Store Store Sales">
-                        <div class="card-body">
-                            <h4 class="card-title">Store Sales</h4>
-                            <p class="card-text">A thorough analysis and report on sales performance, evaluating trends and optimize future strategies for enhanced business growth.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://leonshilisia.github.io/sales-metrics-2014-2017/" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 4 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="EconFDI.jpeg" alt="Project 4">
-                        <div class="card-body">
-                            <h4 class="card-title">An examination of the relationship between Foreign Direct Investment (FDI) and economic growth, exploring how FDI influences key economic indicators, drives development, and fosters sustainable growth in various sectors.</h4>
-                            <p class="card-text">Research paper aimed to determine the nature of the relationship between Foreign Direct Investment and Economic Growth.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://leonshilisia.github.io/FDI-and-Economic-Growth-in-Kenya/" class="btn btn-primary" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Project 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="market_select.jpeg" class="card-img-top" alt="Marketing ROI">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Marketing ROI Optimization</h5>
+              <p class="card-text">
+                Leveraged ROI analysis to maximize campaign efficiency and impact.
+              </p>
+              <a href="https://leonshilisia.github.io/UK-YouTube-Analysis-2024/" 
+                 target="_blank" class="mt-auto btn btn-primary">
+                View Project
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+        <!-- Project 3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="StoreSales.jpeg" class="card-img-top" alt="Store Sales">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Retail Sales Performance</h5>
+              <p class="card-text">
+                Evaluated sales trends and built forecasting models for growth.
+              </p>
+              <a href="https://leonshilisia.github.io/sales-metrics-2014-2017/" 
+                 target="_blank" class="mt-auto btn btn-primary">
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="EconFDI.jpeg" class="card-img-top" alt="FDI & Growth">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">FDI & Economic Growth</h5>
+              <p class="card-text">
+                Researched how foreign direct investment drives sustainable development.
+              </p>
+              <a href="https://leonshilisia.github.io/FDI-and-Economic-Growth-in-Kenya/" 
+                 target="_blank" class="mt-auto btn btn-primary">
+                View Project
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact text-center">
-        <div class="container">
-            <h1 class="mb-4">Contact</h1>
-            <p>You can reach me at:</p>
-            <p>Email: lmshilisia@gmail.com</p>
-            <p>Phone: +254114561501</p>
-<!--             <p>: <a href="https://www.linkedin.com/in/leon-shilisia-920b0326a/" class="text-white" target="_blank"> <img src="linkedin.png" alt="" width="20" height="20".></a></p>
-        </div> -->
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="page-section text-center">
+    <div class="container">
+      <h2 class="mb-4">Get in Touch</h2>
+      <p>Email: <a href="mailto:lmshilisia@gmail.com">lmshilisia@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254114561501">+254 114 561 501</a></p>
+      <p class="mt-3">
+        <a href="https://www.linkedin.com/in/leon-shilisia-920b0326a/" target="_blank"
+           class="text-white mx-2">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </p>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script>
-        // Smooth scrolling for navigation links
-        $(document).ready(function(){
-            $('a.nav-link').on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <small>&copy; 2025 BeyondStats. All rights reserved.</small>
+    </div>
+  </footer>
 
-        // Dynamic navbar highlighting
-        $(window).scroll(function() {
-            var scrollDistance = $(window).scrollTop();
-            $('.page-section').each(function(i) {
-                if ($(this).position().top <= scrollDistance) {
-                    $('.navbar-nav a.nav-link.active').removeClass('active');
-                    $('.navbar-nav a.nav-link').eq(i).addClass('active');
-                }
-            });
-        }).scroll();
-    </script>
+  <!-- JS Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Smooth Scrolling & Active Nav Highlight -->
+  <script>
+    $(document).ready(function(){
+      $('a.nav-link').click(function(e){
+        if(this.hash){
+          e.preventDefault();
+          $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - 65
+          }, 500);
+        }
+      });
+    });
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop() + 70;
+      $('.page-section').each(function(){
+        var top = $(this).offset().top;
+        var id  = $(this).attr('id');
+        if(scroll >= top){
+          $('.navbar-nav .nav-link').removeClass('active');
+          $('.navbar-nav .nav-link[href="#'+ id +'"]').addClass('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
